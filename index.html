@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rea Oro Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      background: #0e0e0e;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px;
+      text-align: center;
+      background: #111;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      margin: 0;
+    }
+
+    header p {
+      color: #aaa;
+    }
+
+    nav {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #000;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Rea Oro</h1>
+    <p>Concept Art Portfolio</p>
+  </header>
+
+  <nav>
+    <a href="#">home</a>
+    <a href="#about">about</a>
+    <a href="#work">work</a>
+    <a href="#contact">contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>about</h2>
+    <p>Welcome! This website showcases a selection of my concept art projects.</p>
+  </section>
+
+  <section id="work">
+    <h2>Concept Art Projects</h2>
+
+    <div class="projects">
+      <div class="project">
+        <h3>Project: Lira</h3>
+        <p>Created using Adobe Photoshop and Zbrush.</p>
+      </div>
+
+      <div class="project">
+        <h3>Project: Lotus</h3>
+        <p>Created using Adobe Photoshop and Zbrush.</p>
+      </div>
+
+      <div class="project">
+        <h3>Project: Patata</h3>
+        <p>Created using Adobe Photoshop.</p>
+      </div>
+
+      <div class="project">
+        <h3>Project: Torio</h3>
+        <p>Created using Adobe Photoshop.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>concept.reaoro@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Rea Oro</p>
+  </footer>
+
+</body>
+</html>
