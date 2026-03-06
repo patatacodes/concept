@@ -1,133 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rea Oro Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Space Grotesk', sans-serif;
-      background: #0e0e0e;
-      color: white;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 60px;
-      text-align: center;
-      background: #111;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 56px;
-      margin: 0;
-    }
-
-    header p {
-      color: #aaa;
-    }
-
-    nav {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 60px 10%;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-
-    .project:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      background: #000;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .gallery-item {
+            position: relative;
+            width: 100%;
+            height: auto;
+            transition: transform 0.7s, filter 0.7s;
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+    </style>
 </head>
-
 <body>
-
-  <header>
-    <h1>Rea Oro</h1>
-    <p>Concept Art Portfolio</p>
-  </header>
-
-  <nav>
-    <a href="#">home</a>
-    <a href="#about">about</a>
-    <a href="#work">work</a>
-    <a href="#contact">contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>about</h2>
-    <p>Welcome! This website showcases a selection of my concept art projects.</p>
-  </section>
-
-  <section id="work">
-    <h2>Concept Art Projects</h2>
-
-    <div class="projects">
-      <div class="project">
-        <h3>Project: Lira</h3>
-        <p>Created using Adobe Photoshop and Zbrush.</p>
-      </div>
-
-      <div class="project">
-        <h3>Project: Lotus</h3>
-        <p>Created using Adobe Photoshop and Zbrush.</p>
-      </div>
-
-      <div class="project">
-        <h3>Project: Patata</h3>
-        <p>Created using Adobe Photoshop.</p>
-      </div>
-
-      <div class="project">
-        <h3>Project: Torio</h3>
-        <p>Created using Adobe Photoshop.</p>
-      </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="lira.png" alt="Lira Art">
+            <div class="overlay"><h2>Lira</h2></div>
+        </div>
+        <div class="gallery-item">
+            <img src="lotus.png" alt="Lotus Art">
+            <div class="overlay"><h2>Lotus</h2></div>
+        </div>
+        <div class="gallery-item">
+            <img src="patata.png" alt="Patata Art">
+            <div class="overlay"><h2>Patata</h2></div>
+        </div>
+        <div class="gallery-item">
+            <img src="torio.png" alt="Torio Art">
+            <div class="overlay"><h2>Torio</h2></div>
+        </div>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>concept.reaoro@gmail.com</p>
-  </section>
-
-  <footer>
-    <p>© 2026 Rea Oro</p>
-  </footer>
-
 </body>
 </html>
